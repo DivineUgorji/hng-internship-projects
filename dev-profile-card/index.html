@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/3de0e61c18.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Developer Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <aside>
+        <h1 class="sr-only">Developer profile card</h1>
+        <div class="profile-card">
+          <div class="profile-img-container">
+            <img
+              class="profile-img slide-in-right"
+              data-testid="profilePicture"
+              src="./assets/profilepix.JPG"
+              alt="Developer profile picture"
+            />
+          </div>
+
+          <div class="card-info flow-content reveal-animation">
+            <div class="profile-title-container">
+              <h2 data-testid="fullName">Divine Ugorji</h2>
+              <p class="accent-color" data-testid="jobTitle">
+                FrontEnd Developer
+              </p>
+            </div>
+
+            <div class="profile-bio text-center">
+              <p class="about-text">About Me</p>
+              <p class="text-width" data-testid="shortBio">
+                I craft sleek web user experiences that boost retention,
+                transform site visitors into paying customers, and make every
+                interaction seamless.
+              </p>
+            </div>
+
+            <div class="flex-style">
+              <i class="fa-solid fa-location-dot accent-color"></i>
+              <p class="text--sm" data-testid="currentLocation">
+                Owerri, Imo state, Nigeria
+              </p>
+            </div>
+
+            <div class="flex-style flow-content-sm">
+              <i class="fa-solid fa-envelope accent-color"></i>
+              <p class="text--sm" data-testid="emailAddress">
+                divinepower275@gmail.com
+              </p>
+            </div>
+
+            <div class="flex-style flow-content-sm">
+              <i class="fa-solid fa-clock accent-color"></i>
+              <p class="text--sm"><span id="utc-time">4:00</span></p>
+            </div>
+
+            <ul class="social-links flex-style" role="list">
+              <li role="list">
+                <a href="https://web.facebook.com/" data-testid="socialLinks"
+                  ><i class="social-icon fa-brands fa-facebook accent-color"></i
+                ></a>
+              </li>
+              <li role="list">
+                <a href="https://x.com/Divine__Ugorji" data-testid="socialLinks"
+                  ><i
+                    class="social-icon fa-brands fa-square-x-twitter accent-color"
+                  ></i
+                ></a>
+              </li>
+              <li role="list">
+                <a
+                  href="https://github.com/DivineUgorji"
+                  data-testid="socialLinks"
+                  ><i class="social-icon fa-brands fa-github accent-color"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
