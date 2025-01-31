@@ -35,7 +35,7 @@ The **Dev Profile Card** is a simple yet elegant component designed to present a
 
 ![](./assets/card-design.png)
 
-🔗 **Live Demo:** [Project Link](https://your-live-demo-url.com)
+🔗 **Live Demo:** [Project Link](https://dev-profile-card-rho.vercel.app/)
 
 ---
 
