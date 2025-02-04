@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Guessing Game</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div id="game-container" class="flow-content">
+          <h1 class="text-center">Color Guessing Game</h1>
+          <p class="text-center" data-testid="gameInstructions">
+            Click the circles to guess the correct color in the box!
+          </p>
+          <div class="score-board text-center">
+            <p id="round-display">Round: 1/6</p>
+            <p id="score-display" data-testid="score">Wins: 0 | Losses: 0</p>
+          </div>
+          <div id="color-box" data-testid="colorBox"></div>
+          <div>
+            <p
+              id="message-display"
+              class="text-center"
+              data-testid="gameStatus"
+            ></p>
+          </div>
+          <div id="color-options" data-testid="colorOption"></div>
+          <div>
+            <button id="restart-btn" data-testid="newGameButton">
+              Restart Game
+            </button>
+          </div>
+        </div>
+
+        <div id="game-over-modal" class="modal hidden">
+          <div class="modal-content">
+            <h2>Game Over</h2>
+            <p id="final-score">Wins: 0/6</p>
+            <button
+              id="play-again"
+              class="restart-btn"
+              data-testid="newGameButton"
+            >
+              Play Again
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
